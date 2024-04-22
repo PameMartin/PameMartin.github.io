@@ -121,6 +121,7 @@ section{
     margin: 20px auto;
     cursor: pointer;
     max-width: 100%;
+    text-align: center;
 }
 
 #about_section div:hover{
@@ -137,6 +138,9 @@ section{
 }
 #about_me_h1{
     font-size: 30px;
+}
+#about_section h2{
+    margin-bottom: 20px;
 }
 #personal_info{
     display: flex;
