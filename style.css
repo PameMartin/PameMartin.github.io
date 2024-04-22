@@ -220,12 +220,14 @@ section{
     width: 600px;
     height: 70%;
     margin: 0 auto;
-    max-width: 100%;
+    background-color: #E1B5B3;
 }
 
 #contact_form fieldset{
-    padding: 1rem;
     border: none;
+}
+#contact_form_h1{
+    margin-bottom: 15px;
 }
 
 .formfield {
@@ -240,8 +242,6 @@ section{
 .form_container{
     background-color: #E1B5B3;
     border-radius: 5px;
-    width: 600px;
-    max-width: 100%;
 }
 .formfield label{
     padding: 5px;
@@ -262,14 +262,13 @@ form#contact_form fieldset legend{
     font-size: 25px;
     font-weight: bold;
     color: #333333;
-    background-color: #E1B5B3;
-    padding: 20px;
-    border-radius: 5px;
     text-align: center;
+    padding: 20px 0px;
 }
+
 form#contact_form fieldset button {
-    background-color: #E1B5B3;
-    padding: 12px;
+    background-image: linear-gradient(#eeeeee, #e0d5d5);
+    padding: 13px;
     border-radius: 10px;
     border: none;
     color: #333333;
@@ -277,8 +276,13 @@ form#contact_form fieldset button {
     font-weight: bold;
     width: 100px;
     cursor: pointer;
+    margin: 8px;
 }
 
+form#contact_form fieldset button:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
 .error{
     color: #a82319;
     font-size: 15px;
