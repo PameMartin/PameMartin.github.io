@@ -64,6 +64,15 @@ h1, h2, p{
 #toggle-nav {
     display: none;
 }
+#menu_icon{
+    font-size: 35px;
+    font-weight: bold;
+    color: #E1B5B3;
+    transition: all 0.4s ease;
+}
+#menu_icon:hover{
+    color: #333333;
+}
 
 nav label {
     z-index: 99;
@@ -73,17 +82,6 @@ nav label {
     left: 20px;
     cursor: pointer;
     transition: 0.3s ease;
-}
-
-nav label > div {
-    height: 5px;
-    width: 35px;
-    background: #E1B5B3;
-    margin: 5px;
-    transition: transform 0.5s;
-}
-nav label:hover > div {
-    background-color: #333333;
 }
 
 #toggle-nav:checked ~ #main_nav{
@@ -96,17 +94,6 @@ nav label:hover > div {
     transform: translateY(0);
     opacity: 1;
 }
-#toggle-nav:checked ~ label > div:nth-child(1){
-    transform: rotate(45deg);
-    margin-top: 20px;
-}
-#toggle-nav:checked ~ label > div:nth-child(2){
-    opacity: 0;
-}
-#toggle-nav:checked ~ label > div:nth-child(3){
-    transform: rotate(-45deg);
-    margin-top: -20px;
-}
 
 section{
     display: flex;
@@ -117,6 +104,7 @@ section{
     padding: 20px;
     width: 65rem;
     height: 100%;
+    max-width: 100%;
 }
 
 #about_section{
@@ -124,6 +112,7 @@ section{
     flex-direction: column;
     padding: 20px;
     width: 65rem;
+    max-width: 100%;
 }
 #about_section div{
     width: 800px;
@@ -131,6 +120,7 @@ section{
     padding: 25px;
     margin: 20px auto;
     cursor: pointer;
+    max-width: 100%;
 }
 
 #about_section div:hover{
@@ -207,19 +197,20 @@ section{
     width: 180px;
 }
 
-form#contact_form{
+#contact_form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     padding: 20px;
-    width: 80%;
+    width: 600px;
     height: 70%;
     margin: 0 auto;
+    max-width: 100%;
 }
 
-form#contact_form fieldset{
+#contact_form fieldset{
     padding: 1rem;
     border: none;
 }
@@ -230,10 +221,14 @@ form#contact_form fieldset{
     margin-bottom: 20px;
     padding: 12px;
 }
+.client_error{
+    grid-column: span 2;
+}
 .form_container{
     background-color: #E1B5B3;
     border-radius: 5px;
     width: 600px;
+    max-width: 100%;
 }
 .formfield label{
     padding: 5px;
@@ -270,6 +265,7 @@ form#contact_form fieldset button {
     width: 100px;
     cursor: pointer;
 }
+
 .error{
     color: #a82319;
     font-size: 15px;
@@ -326,6 +322,9 @@ footer{
 
 @media(min-width: 768px){
     
+    #menu_icon{
+        display: none;
+    }
     nav{
         display: flex;
         justify-content: space-evenly;
