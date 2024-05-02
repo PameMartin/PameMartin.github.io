@@ -155,6 +155,7 @@ function formFieldHasInput(fieldElement) {
  * Handles the load event of the document.
  */
 function load(){
+   
     // Add event listener for the form submit
     document.getElementById("contact_form").addEventListener("submit", validate);
     
